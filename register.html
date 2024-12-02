@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register for Events - Sprout & Grow</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register - Sprout & Grow</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Sprout & Grow Logo" class="logo">
         <nav>
+            <h1>Sprout & Grow</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,35 +20,37 @@
         </nav>
     </header>
     <main>
-        <h1>Event Registration</h1>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <section class="intro">
+            <h1>Sign Up for Our Events</h1>
+            <p>Fill out the form below to register for one of our upcoming events.</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="event">Event:</label>
-            <select id="event" name="event" required>
-                <option value="workshop">Gardening Workshop</option>
-                <option value="seminar">Sustainability Seminar</option>
-            </select>
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option value="workshop">Gardening Workshop</option>
+                    <option value="seminar">Sustainability Seminar</option>
+                </select>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+                <fieldset>
+                    <legend>Preferred Time:</legend>
+                    <label><input type="checkbox" name="time" value="morning"> Morning</label>
+                    <label><input type="checkbox" name="time" value="afternoon"> Afternoon</label>
+                </fieldset>
 
-            <button type="submit">Submit</button>
-        </form>
+                <input type="submit" value="Register">
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Sprout & Grow. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://facebook.com" target="_blank">
-                <img src="facebook-logo.png" alt="Facebook">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="x-logo.png" alt="X">
-            </a>
+        <p>&copy; 2024 Sprout & Grow</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://x.com" target="_blank">X</a>
         </div>
     </footer>
 </body>
